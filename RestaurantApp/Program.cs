@@ -17,6 +17,11 @@ namespace RestaurantApp
                     new Restaurant(2, "Donglaishun Hot Pot", "Hot Pot", 4.6),
                     new Restaurant(3, "Din Tai Fung", "Taiwanese Cuisine", 4.7)
             };
+            Console.WriteLine("===== รายชื่อร้าน =====");
+            foreach (var item in restaurants)
+            {
+                Console.WriteLine($"{item.Id}. {item.Name} {item.type}) - Rating: {item.rate}");
+            }
         }
     }
 }
